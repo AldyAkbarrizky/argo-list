@@ -38,11 +38,11 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
-jspm_packages/
+backend/node_modules/
+backend/jspm_packages/
 
 # TypeScript v1 declaration files
-typings/
+backend/typings/
 
 # TypeScript cache
 *.tsbuildinfo
@@ -76,14 +76,14 @@ typings/
 .cache
 
 # Next.js build output
-.next
+backend/.next
 
 # Nuxt.js build / generate output
-.nuxt
-dist
+backend/.nuxt
+backend/dist
 
 # Gatsby files
-.cache/
+backend/.cache/
 # Comment in the public line in if your project uses Gatsby and *not* Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
@@ -92,13 +92,13 @@ dist
 .vuepress/dist
 
 # Serverless directories
-.serverless/
+backend/.serverless/
 
 # FuseBox cache
-.fusebox/
+backend/.fusebox/
 
 # DynamoDB Local files
-.dynamodb/
+backend/.dynamodb/
 
 # TernJS port file
 .tern-port
