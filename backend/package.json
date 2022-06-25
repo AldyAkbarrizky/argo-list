@@ -1,5 +1,5 @@
 {
-  "name": "argo-list",
+  "name": "argo-list-backend",
   "version": "1.0.0",
   "description": "Aplikasi untuk membantu users mendata manga apa saja yang sudah dibaca",
   "main": "server.js",
