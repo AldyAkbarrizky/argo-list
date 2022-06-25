@@ -1,16 +1,20 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+require('dotenv').config();
+
+// app
 const app = express();
 
+// middlewares
 var corsOptions = {
     origin: "http://localhost:8081"
 }
-
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 
+// database
 const db = require("./app/models");
 db.mongoose
     .connect(db.url, {
@@ -25,12 +29,13 @@ db.mongoose
         process.exit();
     });
 
+// routes
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to Argo List" });
 })
-
 require("./app/routes/list.routes")(app);
-require("./app/routes/user.routes")(app);
+authRoutes = require("./app/routes/user.routes");
+app.use('/api/users', authRoutes);
 
 const PORT = process.env.PORT || 8080;
 
