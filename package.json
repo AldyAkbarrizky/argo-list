@@ -1,0 +1,32 @@
+{
+  "name": "argo-list",
+  "version": "1.0.0",
+  "description": "Aplikasi untuk membantu users mendata manga apa saja yang sudah dibaca",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AldyAkbarrizky/argo-list.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "Aldy Akbarrizky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AldyAkbarrizky/argo-list/issues"
+  },
+  "homepage": "https://github.com/AldyAkbarrizky/argo-list#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0"
+  }
+}
